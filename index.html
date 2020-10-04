@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> React Project </title>
+    <!-- incooperating the React library -->
+    <script src = "https://unpkg.com/react@16.7.0/umd/react.development.js"> </script>
+    <script src = "https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"> </script>
+  </head>
+
+  <body>
+    <div id = "root"> </div>
+    // ReactJS code
+      <script type = "text/javascript">
+        ReactDOM.render(
+          React.createElement(
+            "h1",
+          {"style" : {"color" : "blue"}},
+          "React is Awsome"
+        ),
+          document.getElementById("root")
+        );
+      </script>
+
+  </body>
+</html>
