@@ -3,25 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title> React Project </title>
+
     <!-- incooperating the React library -->
     <script src = "https://unpkg.com/react@16.7.0/umd/react.development.js"> </script>
     <script src = "https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"> </script>
+
+    <!--attaching the babel script-->
+    <script src = "https://unpkg.com/@babel/standalone/babel.min.js"> </script>
+
   </head>
 
   <body>
     <div id = "root"> </div>
+
      <!-- ReactJS code -->
-      <script type = "text/javascript">
+      <script type = "text/babel">
         ReactDOM.render(
-          React.createElement(
-            "div",
-            null,
-          React.createElement(
-            "h1",
-            null,
-            "Oh ! React..."
-          )
-        ),
+          <h1> Hello World ! </h1>,
           document.getElementById("root")
         );
       </script>
