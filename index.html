@@ -11,6 +11,12 @@
     <!--attaching the babel script-->
     <script src = "https://unpkg.com/@babel/standalone/babel.min.js"> </script>
 
+    <!--css styling-->
+    <style>
+      .heading {
+        color : purple;
+      }
+    </style>
   </head>
 
   <body>
@@ -18,8 +24,10 @@
 
      <!-- ReactJS code -->
       <script type = "text/babel">
+        let city = "Tokyo";
+
         ReactDOM.render(
-          <h1> Hello World ! </h1>,
+          <h1 className = "heading"> Hello {city} ! </h1>,
           document.getElementById("root")
         );
       </script>
