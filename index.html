@@ -25,16 +25,18 @@
      <!-- ReactJS code -->
       <script type = "text/babel">
 
-        const Hello = () => {
+        const Hello = ({library, message}) => {
+
           return (
            <div className = "heading">
-            <h1> Welcome to ReactJS </h1>
+            <h1> Welcome to {library} </h1>
+            <p> {message} </p>
            </div>
            )
          };
-         
+
         ReactDOM.render(
-          <Hello />,
+          <Hello library = "React" message = "Enjoy Coding"/>,
           document.getElementById("root")
         );
       </script>
