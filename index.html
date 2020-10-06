@@ -28,14 +28,19 @@
         const Lake = ({name}) =>
           <h1> {name} </h1>;
 
-        const App = () => (
-          <div>
-            <Lake name = "Lake Tahoe"/>
-            <Lake name = "Angora Lake"/>
-            <Lake name = "Shirley Lake"/>
-            <Lake name = "Cathedral Lake"/>
-          </div>
-        );
+        class App extends React.Component {
+          render() {
+            return (
+              <div>
+                <Lake name = "Lake Tahoe"/>
+                <Lake name = "Angora Lake"/>
+                <Lake name = "Shirley Lake"/>
+                <Lake name = "Cathedral Lake"/>
+                <Lake name = "Calgery Lake"/>
+              </div>
+            )
+          }
+        }
 
         ReactDOM.render(
           <App />,
