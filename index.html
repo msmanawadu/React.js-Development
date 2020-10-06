@@ -24,10 +24,17 @@
 
      <!-- ReactJS code -->
       <script type = "text/babel">
-        let city = "Tokyo";
 
+        const Hello = () => {
+          return (
+           <div className = "heading">
+            <h1> Welcome to ReactJS </h1>
+           </div>
+           )
+         };
+         
         ReactDOM.render(
-          <h1 className = "heading"> Hello {city} ! </h1>,
+          <Hello />,
           document.getElementById("root")
         );
       </script>
