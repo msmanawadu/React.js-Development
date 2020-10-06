@@ -25,18 +25,20 @@
      <!-- ReactJS code -->
       <script type = "text/babel">
 
-        const Hello = ({library, message}) => {
+        const Lake = ({name}) =>
+          <h1> {name} </h1>;
 
-          return (
-           <div className = "heading">
-            <h1> Welcome to {library} </h1>
-            <p> {message} </p>
-           </div>
-           )
-         };
+        const App = () => (
+          <div>
+            <Lake name = "Lake Tahoe"/>
+            <Lake name = "Angora Lake"/>
+            <Lake name = "Shirley Lake"/>
+            <Lake name = "Cathedral Lake"/>
+          </div>
+        );
 
         ReactDOM.render(
-          <Hello library = "React" message = "Enjoy Coding"/>,
+          <App />,
           document.getElementById("root")
         );
       </script>
