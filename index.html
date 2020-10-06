@@ -29,9 +29,14 @@
           <h1> {name} </h1>;
 
         class App extends React.Component {
+          state = {
+            loggedIn : false
+          }
+
           render() {
             return (
               <div>
+                <div> The user is {this.state.loggedIn ? "logged In" : "not logged In"} </div>
                 <Lake name = "Lake Tahoe"/>
                 <Lake name = "Angora Lake"/>
                 <Lake name = "Shirley Lake"/>
